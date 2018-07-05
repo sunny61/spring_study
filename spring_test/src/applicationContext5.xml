@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+		 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<bean id="dataTypeAll" class="spring.collectionAttribute.DataTypeAll">
+	
+	   <property name="arrayValue">
+	      <list>
+	         <value>array1</value>
+	         <value>array2</value>
+	         <value>array3</value>
+	      </list>
+	   </property>
+	   
+	   <property name="listValue">
+	      <list>
+	         <value>list1</value>
+	         <value>list2</value>
+	         <value>list3</value>
+	      </list>
+	   </property>
+	   
+	   <property name="setValue">
+	      <set>
+	         <value>set1</value>
+	         <value>set2</value>
+	         <value>set3</value>
+	      </set>
+	   </property>
+	   
+	   <property name="mapValue">
+	     <map>
+	      <entry key="k1" value="mapValue1"></entry>
+	      <entry key="k2" value="mapValue2"></entry>
+	      <entry key="k3" value="mapValue3"></entry>
+	     </map>
+	   </property>
+	   
+	   <property name="basicInfo">
+	     <props>
+	        <prop key="high">1.75</prop>
+	        <prop key="weight">120</prop>
+	     </props>   
+	   </property>
+	</bean>
+		 
+</beans>
+		

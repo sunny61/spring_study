@@ -1,8 +1,14 @@
-package spring.test;
+package spring.setter.test1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * setter方法注入： <1>非引用注入（值注入）
+ * 
+ * @author Administrator
+ *
+ */
 public class test {
 
 	public static void main(String[] args) {
@@ -21,9 +27,8 @@ public class test {
 		/**
 		 * 第三种方式： User user = applicationContext.getBean("user", User.class);
 		 */
-
+		// user中属性为普通类型，为基本数据类型
 		user.Hello();
-		user.HelloName("");
 
 	}
 }
